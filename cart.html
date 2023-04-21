@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AGRI E-Commerce Site - Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>AGRI E-Commerce Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="cart-section">
+      <h2>Cart</h2>
+      <div class="cart-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Cart items go here -->
+            <tr>
+              <td>
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+              </td>
+              <td>₹300</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>₹300</td>
+              <td>
+                <a href="#">Remove</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+              </td>
+              <td>₹170</td>
+              <td>
+                <input type="number" value="2" min="1">
+              </td>
+              <td>₹340</td>
+              <td>
+                <a href="#">Remove</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="cart-total">
+          <h3>Cart Total: ₹640</h3>
+          <a href="#" class="btn">Checkout</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
