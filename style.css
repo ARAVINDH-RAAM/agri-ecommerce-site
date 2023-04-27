@@ -67,6 +67,9 @@ main {
 
 .hero-section {
   background-image: purple.jpeg;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
   background-color: #D6DBE2;
   text-align: center;
   padding: 80px 20px;
