@@ -151,9 +151,12 @@ main {
   font-size
 }
 footer{
+  color: white;
   background-color: #9B59B6;
 }
-.hero-section,
-.footer {
+p.footer{
+  color: white;
+}
+h2.footer{
   color: white;
 }
