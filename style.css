@@ -153,6 +153,7 @@ main {
 footer{
   background-color: #9B59B6;
 }
-.footer{
+.hero-section,
+.footer {
   color: white;
 }
