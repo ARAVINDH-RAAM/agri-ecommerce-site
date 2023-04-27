@@ -64,16 +64,14 @@ nav a:hover {
 main {
   padding: 20px;
 }
-
 .hero-section {
-  background-image: purple.jpeg;
+  background-image: url("purple.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   text-align: center;
   padding: 80px 20px;
 }
-
 .hero-section h2 {
   font-size: 48px;
   margin-bottom: 20px;
