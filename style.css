@@ -73,11 +73,13 @@ main {
   padding: 80px 20px;
 }
 .hero-section h2 {
+  background-color: #8E44AD;
   font-size: 48px;
   margin-bottom: 20px;
 }
 
 .hero-section p {
+  background-color: #8E44AD;
   font-size: 24px;
   margin-bottom: 40px;
 }
