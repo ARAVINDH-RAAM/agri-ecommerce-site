@@ -1,11 +1,8 @@
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
-
-/* Header styles */
 header {
   background-color: #9B59B6;
   color: white;
@@ -59,8 +56,6 @@ nav a:hover {
   background-color: #9B59B6;
   color: white;
 }
-
-/* Main content styles */
 main {
   padding: 20px;
 }
