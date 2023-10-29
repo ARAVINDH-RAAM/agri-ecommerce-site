@@ -7,6 +7,52 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* cart.css */
+
+/* Style for product images in the cart */
+.cart-container img {
+  max-width: 100px; /* Adjust the max-width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style for the cart items and their details */
+.cart-container .product-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.cart-container .product-card img {
+  margin-right: 20px;
+}
+
+/* Style for the cart total section */
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Style for the checkout button */
+.cart-total .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cart-total .btn:hover {
+  background-color: #45a049;
+}
+
     body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
