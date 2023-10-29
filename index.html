@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     .login-btn {
-      color:white;
+      color: white;
       position: absolute;
       top: 10px;
       right: 10px;
@@ -25,7 +25,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="product.html">Products</a></li>
         <li><a href="cart.html">Cart</a></li>
-        <li><a href="account.html">---------</a></li>
+        <li><a href="account.html">Account</a></li>
         <li><a href="login.html" class="login-btn">Login</a></li>
       </ul>
     </nav>
@@ -36,49 +36,64 @@
     <section class="hero-section">
       <h2 class="footer">Welcome to Our Store!</h2>
       <p class="footer">Discover a wide range of agriculture products.</p>
-      <a href="#" class="btn">Shop Now</a>
+      <a href="product.html" class="btn">Shop Now</a>
     </section>
 
     <section class="product-section">
       <h2>Featured Products</h2>
       <div class="product-container">
         <!-- Product 1 -->
-        <div class="product-card">
+        <div class="product-card" id="product1">
           <img src="tomato.jpg" alt="Product 1">
           <h3>Tomato</h3>
           <p>Fresh farm tomatoes</p>
           <span class="price">₹300</span>
-          <a href="#" class="btn">Add to Cart</a>
+          <a href="#" class="btn" onclick="addToCart('Tomato', 300, 'tomato.jpg')">Add to Cart</a>
         </div>
 
         <!-- Product 2 -->
-        <div class="product-card">
+        <div class="product-card" id="product2">
           <img src="potato.jpg" alt="Product 2">
-          <h3>potato</h3>
+          <h3>Potato</h3>
           <p>Fresh potatoes available in the market</p>
           <span class="price">₹170</span>
-          <a href="#" class="btn">Add to Cart</a>
+          <a href="#" class="btn" onclick="addToCart('Potato', 170, 'potato.jpg')">Add to Cart</a>
         </div>
 
         <!-- Product 3 -->
-        <div class="product-card">
+        <div class="product-card" id="product3">
           <img src="carrot.jpg" alt="Product 3">
-          <h3>carrot</h3>
-          <p>Fresh hand picked carrots</p>
+          <h3>Carrot</h3>
+          <p>Fresh hand-picked carrots</p>
           <span class="price">₹150</span>
-          <a href="#" class="btn">Add to Cart</a>
+          <a href="#" class="btn" onclick="addToCart('Carrot', 150, 'carrot.jpg')">Add to Cart</a>
         </div>
       </div>
     </section>
   </main>
-   <footer>
-     <nav>
+  <footer>
+    <nav>
       <ul>
         <li>Done By:</li>
-        <li>ARAVINDH RAAM (RA2111031010078</li>
+        <li>ARAVINDH RAAM (RA2111031010078)</li>
       </ul>
     </nav>
   </footer>
+
+  <script>
+    // Function to add an item to the cart
+    function addToCart(productName, price, image) {
+      const cartItem = {
+        name: productName,
+        price: price,
+        image: image,
+      };
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(cartItem);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${productName} added to the cart.`);
+    }
+  </script>
 </body>
 
 </html>
