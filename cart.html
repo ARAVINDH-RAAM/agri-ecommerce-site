@@ -7,17 +7,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* cart.css */
-
-/* Style for product images in the cart */
 .cart-container img {
-  max-width: 100px; /* Adjust the max-width as needed */
+  max-width: 100px; 
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-/* Style for the cart items and their details */
 .cart-container .product-card {
   display: flex;
   flex-direction: row;
@@ -30,15 +25,11 @@
 .cart-container .product-card img {
   margin-right: 20px;
 }
-
-/* Style for the cart total section */
 .cart-total {
   text-align: right;
   margin-top: 20px;
   font-weight: bold;
 }
-
-/* Style for the checkout button */
 .cart-total .btn {
   background-color: #4CAF50;
   color: white;
@@ -65,8 +56,6 @@
     text-align: center;
     margin: 20px 0;
   }
-
-  /* Cart Styles */
   .cart-section {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -113,7 +102,6 @@
     background-color: #45a049;
   }
 
-  /* Animation */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -131,7 +119,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <h1>AGRI E-Commerce Store</h1>
     <nav>
@@ -144,8 +131,6 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Main Content -->
   <main>
     <section class="cart-section">
       <h2>Cart</h2>
@@ -161,7 +146,6 @@
             </tr>
           </thead>
           <tbody id="cartItems">
-            <!-- Cart items go here -->
           </tbody>
         </table>
 
@@ -174,7 +158,6 @@
   </main>
 
   <script>
-    // Function to update the cart page with items from local storage
     function loadCart() {
       const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
@@ -201,8 +184,6 @@
       const cartTotalElement = document.getElementById('cartTotal');
       cartTotalElement.textContent = `Cart Total: ₹${cartTotal}`;
     }
-
-    // Function to update the total price of an item based on quantity
     function updateTotal(input, rowIndex) {
       const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
       const totalCell = document.getElementById('cartItems').rows[rowIndex].cells[3];
@@ -212,8 +193,6 @@
       totalCell.textContent = `₹${total}`;
       updateCartTotal();
     }
-
-    // Function to update the cart total
     function updateCartTotal() {
       const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
       let cartTotal = 0;
@@ -226,16 +205,12 @@
       const cartTotalElement = document.getElementById('cartTotal');
       cartTotalElement.textContent = `Cart Total: ₹${cartTotal}`;
     }
-
-    // Function to remove an item from the cart
     function removeItem(rowIndex) {
       const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
       cartItems.splice(rowIndex, 1);
       localStorage.setItem('cart', JSON.stringify(cartItems));
-      location.reload(); // Reload the page to reflect the updated cart
+      location.reload(); 
     }
-
-    // Load the cart on page load
     loadCart();
   </script>
 </body>
