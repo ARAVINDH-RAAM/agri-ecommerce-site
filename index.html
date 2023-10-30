@@ -17,7 +17,6 @@
 </head>
 
 <body>
-  <!-- Header -->
   <header>
     <h1>AGRI E-Commerce Store</h1>
     <nav>
@@ -30,19 +29,15 @@
       </ul>
     </nav>
   </header>
-
-  <!-- Main Content -->
   <main>
     <section class="hero-section">
       <h2 class="footer">Welcome to Our Store!</h2>
       <p class="footer">Discover a wide range of agriculture products.</p>
       <a href="product.html" class="btn">Shop Now</a>
     </section>
-
     <section class="product-section">
       <h2>Featured Products</h2>
       <div class="product-container">
-        <!-- Product 1 -->
         <div class="product-card" id="product1">
           <img src="tomato.jpg" alt="Product 1">
           <h3>Tomato</h3>
@@ -50,8 +45,6 @@
           <span class="price">₹300</span>
           <a href="#" class="btn" onclick="addToCart('Tomato', 300, 'tomato.jpg')">Add to Cart</a>
         </div>
-
-        <!-- Product 2 -->
         <div class="product-card" id="product2">
           <img src="potato.jpg" alt="Product 2">
           <h3>Potato</h3>
@@ -59,8 +52,6 @@
           <span class="price">₹170</span>
           <a href="#" class="btn" onclick="addToCart('Potato', 170, 'potato.jpg')">Add to Cart</a>
         </div>
-
-        <!-- Product 3 -->
         <div class="product-card" id="product3">
           <img src="carrot.jpg" alt="Product 3">
           <h3>Carrot</h3>
@@ -81,7 +72,6 @@
   </footer>
 
   <script>
-    // Function to add an item to the cart
     function addToCart(productName, price, image) {
       const cartItem = {
         name: productName,
